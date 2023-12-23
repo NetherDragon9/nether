@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(3, 17, 13);
+    display: flex;
+}
+.img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(0, 255, 234, 0.178);
+    flex-shrink: 0;
+}
+.img img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.menu{
+    background-color: rgb(25, 82, 72);
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .6s;
+}
+.menu:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+ul li a:hover,.active{
+    background-color: rgb(11, 73, 62);
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.logout a:hover{
+    background-color: rgba(85, 4, 4, 0.397);
+}ul li a i{
+    font-size: 30px;
+}
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title{
+    background-color: aquamarine;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.title p, .title i{
+    color: rgb(0, 66, 35);
+}
+.datai{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    background-color: rgba(1, 121, 81, 0.315);
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.box:hover{
+    background-color: rgba(1, 121, 81, 0.596);
+}
+.box i{
+    font-size: 40px;
+}
+.data{
+    text-align: center;
+}
+.data span{
+    font-size: 30px;
+}
